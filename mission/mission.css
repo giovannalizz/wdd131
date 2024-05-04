@@ -1,5 +1,4 @@
- 
-h2{
+ h2{
     color: #006EB6;
     letter-spacing: .2rem;
     font-size: 17px;
@@ -46,4 +45,10 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.dark{
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: #76c8ff;
+}
