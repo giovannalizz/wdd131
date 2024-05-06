@@ -1,12 +1,18 @@
-const themeSelector = document.getElementById('theme-selector');
+document.addEventListener('DOMContentLoaded', function() {
+  const themeSelector = document.getElementById('theme-selector');
+  const bodyElement = document.body; 
+  const logo = document.querySelector('.logo'); 
 
-function changeTheme() {
-
-  if (themeSelector.value === 'dark') {
-    document.body.classList.add('dark'); 
-  } else {
-    document.body.classList.remove('dark'); 
+  function changeTheme() {
+      if (themeSelector.value === 'dark') {
+          bodyElement.classList.add('dark');
+          logo.src = "./logodark.jpeg"; 
+      } else {
+          bodyElement.classList.remove('dark');
+          logo.src = './byui-logo_blue.jpeg';
+      }
   }
-}
 
-themeSelector.addEventListener('change', changeTheme);
+  themeSelector.addEventListener('change', changeTheme);
+});
+
