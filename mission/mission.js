@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function changeTheme() {
       if (themeSelector.value === 'dark') {
           bodyElement.classList.add('dark');
-          logo.src = "./logodark.jpeg"; 
+          logo.src = "./byui-logo_dark.png"; 
       } else {
           bodyElement.classList.remove('dark');
           logo.src = './byui-logo_blue.jpeg';
