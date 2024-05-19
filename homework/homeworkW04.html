@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Type something here">
+    <button id="displayButton">Display Text</button>
+    <p id="displayText"></p>
+    
+    <button id="myButton">Click Me!</button>
+    <script>
+        // Get the input field, button, and display paragraph elements by their IDs
+        let inputField = document.getElementById('textInput');
+        let displayButton = document.getElementById('displayButton');
+        let displayParagraph = document.getElementById('displayText');
+
+        // Add an event listener to the button
+        displayButton.addEventListener('click', function() {
+            // Get the value from the input field
+            let inputText = inputField.value;
+
+            // Display the text in the paragraph element
+            displayParagraph.textContent = inputText;
+        });
+        
+        
+        //let button = document.getElementById("myButton");
+//
+        //button.addEventListener('click', function(){
+        //   button.textContent = 'You clicked me!';
+        //   button.style.backgroundColor = 'lightgreen';
+        //});
+    </script>
+    
+</body>
+</html>
