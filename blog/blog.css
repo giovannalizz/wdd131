@@ -22,6 +22,16 @@ body {
 h1 {
     text-align: center;
 }
+h2, h3 {
+    margin-top: var(--spacing-larger);
+}
+h3, h4 {
+    text-align: right;
+    margin-bottom: var(--spacing-smaller);
+}
+h4 {
+    margin-top: var(--spacing-smaller);
+}
 h1, h2, h3, h4 {
     font-family: var(--headline-font);
 }
@@ -41,9 +51,11 @@ a {
     text-decoration: none;
 }
 img {
-    margin-left: var(--element-min-spacing);
+    display: block;
+    margin: 0 auto;
 }
 aside {
+    border: solid var(--gold-color);
     margin: var(--element-min-spacing) 0;
     padding: 0 var(--element-min-spacing);
 }
@@ -64,6 +76,7 @@ aside {
 .review {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
     margin: var(--element-min-spacing) 0;
 }
 
@@ -83,4 +96,15 @@ aside {
     --layout-threshold: 768px; 
   }
   
-
+  .left-secondary-pane {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: solid var(--gold-color);
+    padding-right: var(--spacing-larger);
+    justify-content: right;
+}
+.right-primary-pane {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: var(--spacing-larger);
+}
