@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
     --gold-color: #efc69b;
@@ -8,19 +8,24 @@
     --body-font: Helvetica, Arial, sans-serif;
     --headline-font: Lora, Impact, serif;
     --container-max-width: 60rem;
-    --element-min-spacing: 1rem;
+    --spacing-larger: 1rem;
+    --spacing-smaller: 0.5rem;
     --layout-threshold: 650px;
 }
+
 
 body {
     color: var(--dark-color);
     font-family: var(--body-font);
     margin: 0 auto;
-    padding: 0 var(--element-min-spacing);
+    padding: 0 var(--spacing-larger);
     max-width: var(--container-max-width);
 }
 h1 {
     text-align: center;
+}
+h1, h2, h3, h4 {
+    font-family: var(--headline-font);
 }
 h2, h3 {
     margin-top: var(--spacing-larger);
@@ -32,14 +37,10 @@ h3, h4 {
 h4 {
     margin-top: var(--spacing-smaller);
 }
-h1, h2, h3, h4 {
-    font-family: var(--headline-font);
-}
-
 nav {
     border-top: solid var(--gold-color);
     border-bottom: solid var(--gold-color);
-    padding: var(--element-min-spacing) 0;
+    padding: var(--spacing-larger) 0;
     text-align: right;
 }
 nav, h2 {
@@ -47,7 +48,7 @@ nav, h2 {
 }
 a {
     color: inherit;
-    margin: 0 var(--element-min-spacing);
+    margin: 0 var(--spacing-larger);
     text-decoration: none;
 }
 img {
@@ -56,20 +57,21 @@ img {
 }
 aside {
     border: solid var(--gold-color);
-    margin: var(--element-min-spacing) 0;
-    padding: 0 var(--element-min-spacing);
+    margin: var(--spacing-larger) 0;
+    padding: 0 var(--spacing-larger);
 }
 
-.box {
+
+.box-container {
     display: grid;
 }
-.top-right {
+.top {
     grid-row: 1/2;
 }
 .display {
     grid-row: 3/4;
 }
-.filter-right {
+.filter {
     grid-row: 2/3;
 }
 
@@ -77,7 +79,19 @@ aside {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
-    margin: var(--element-min-spacing) 0;
+    margin: var(--spacing-larger) 0;
+}
+.left-secondary-pane {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: solid var(--gold-color);
+    padding-right: var(--spacing-larger);
+    justify-content: right;
+}
+.right-primary-pane {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: var(--spacing-larger);
 }
 
 .skiptocontent a {
@@ -89,22 +103,4 @@ aside {
 }
 .skiptocontent a:focus {
     top: 0;
-}
-
-
-:root {
-    --layout-threshold: 768px; 
-  }
-  
-  .left-secondary-pane {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border-right: solid var(--gold-color);
-    padding-right: var(--spacing-larger);
-    justify-content: right;
-}
-.right-primary-pane {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-left: var(--spacing-larger);
 }
