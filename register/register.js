@@ -1,4 +1,4 @@
-import * as html from './Templates.js';
+import * as html from './templates.js';
 
 function addParticipant(count) {
 
