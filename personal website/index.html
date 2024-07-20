@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Sabor Brazuca</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> BRAZUCA</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+           
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./avaliation.html">Avaliações</a>
+                </li>
+            </ul>
+        
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que vai até
+                    <span>você</span>
+                </h1>
+
+                <p class="description">
+                    Bem-vindo ao meu cantinho de delícias brasileiras! Aqui, você encontrará uma seleção de pratos autênticos e irresistíveis que trazem o sabor e a tradição da culinária brasileira. Descubra o melhor da gastronomia do Brasil e aventure-se nessa jornada de sabores e cultura!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">
+                        Ver cardápio
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="www.whatsapp.com">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="www.instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="www.facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="./images/hero.png" alt="banner com fotos">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Assinatura Brasileira</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/brigadeiro.png" height="300" width="350" class="dish-image" alt="brigadeiro">
+
+                    <h3 class="dish-title">
+                        Brigadeiro
+                    </h3>
+
+                    <span class="dish-description">
+                        Doce de chocolate tradicional, feito com leite condensado, manteiga e chocolate em pó, enrolado em bolinhas e coberto com granulados.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$5,00</h4>
+                        
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/coxinha.png" height="300" width="400"  class="dish-image" alt="coxinha">
+
+                    <h3 class="dish-title">
+                       Coxinha
+                    </h3>
+
+                    <span class="dish-description">
+                        Feito de massa de batata e farinha, recheado com frango desfiado e empanado, modelado em formato de gota e frito até ficar crocante
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$8,00</h4>
+                        
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/pastel.ong.jpeg" height="300" width="400"  class="dish-image" alt="pastel">
+
+                    <h3 class="dish-title">
+                        Pastel
+                    </h3>
+
+                    <span class="dish-description">
+                        Feito de massa fina e crocante, geralmente recheado com carne, queijo, ou outros ingredientes, e frito até dourar.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(700+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+                        
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/tapioca.png" height="300" width="400" class="dish-image" alt="tapioca">
+
+                    <h3 class="dish-title">
+                       Tapioca
+                    </h3>
+
+                    <span class="dish-description">Tapioca é uma iguaria brasileira feita de fécula de mandioca, preparada em formato de panqueca e recheada com ingredientes doces ou salgados
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(800+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$7,00</h4>
+                        
+                    </div>
+                    
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/pao-de-queijo.png" height="300" width="400" class="dish-image" alt="pao de queijo">
+
+                    <h3 class="dish-title">
+                       Pão de queijo
+                    </h3>
+
+                    <span class="dish-description">Pão de queijo é um pão tradicional brasileiro, feito com polvilho, queijo, ovos, leite e óleo. Assado até ficar crocante por fora e macio por dentro, é um lanche típico de Minas Gerais
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(900+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+                       
+                    </div>
+
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/acaraje.jpg" height="300" width="400" class="dish-image" alt="acaraje">
+
+                    <h3 class="dish-title">
+                       Acarajé
+                    </h3>
+
+                    <span class="dish-description">Acarajé é um bolinho tradicional da culinária baiana, feito de feijão-fradinho, cebola e sal, frito no azeite de dendê. Geralmente é recheado com vatapá, camarão seco e vinagrete.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(200+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$6,00</h4> 
+                    </div>
+                </div>   
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <img src="./images/chef.png" id="testimonial_chef" alt="chefe">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Pratos favoritos
+                </h2>
+                <h3 class="section-subtitle">
+                    Mais votados
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="./images/cuscuz.png" class="feedback-avatar" alt="cuscuz">
+
+                        <div class="feedback-content">
+                            <p>
+                                Cuscuz
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Cuscuz é um prato brasileiro tradicional, feito com farinha de milho, geralmente cozido no vapor, e servido com acompanhamentos como carne, ovos, vegetais ou leite de coco
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="./images/escondidinho.png" class="feedback-avatar" alt="escondidinho">
+
+                        <div class="feedback-content">
+                            <p>
+                                Escondidinho
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Escondidinho é um prato brasileiro composto por uma camada de carne desfiada ou moída, coberta com purê de mandioca ou batata, gratinado no forno com queijo por cima.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button  class="btn-default">
+                        Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./images/wave.svg" alt="wave">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2024 Giovanna Liz
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="www.whatsapp.com">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="www.facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>
